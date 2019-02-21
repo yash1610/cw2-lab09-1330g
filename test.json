@@ -1,0 +1,21 @@
+{
+    "name": "dark mode",
+    "description": "dark mode for game",
+    "price": 100,
+    "item_image": "media/dark_mode.png",
+    "category": "appearance"
+},
+{
+    "name": "wins",
+    "description": "buy 100 wins",
+    "price": 200,
+    "item_image": "media/buy_wins.png",
+    "category": "cheat"
+},
+{
+    "name": "save",
+    "description": "save stats",
+    "price": 150,
+    "item_image": "media/save.png",
+    "category": "quality"
+}
