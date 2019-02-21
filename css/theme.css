@@ -137,6 +137,31 @@ form button:hover, #userInfo button:hover, #continueGame:hover {
     color: rgb(114, 43, 2);
 }
 
+/*=== shopping items===*/
+
+#shopItemsContainer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 5px;
+    justify-items: center;
+}
+
+.shopItem {
+    text-align: center;
+}
+
+.shopItem img {
+    height: 100px;
+}
+
+.shopItem p {
+    margin: 0.5em;
+}
+
+.shopItem p:nth-child(2) {
+    font-weight: bold;
+}
+
 /*=== checkout page===*/
 
 #checkoutButton {

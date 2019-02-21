@@ -44,17 +44,17 @@
 
     <script src = "../js/pageLoad.js"></script>
 
-    <article class="grid-item" style="grid-column: 2 / 4;">
-        <div id = "shopItemsContainer">
-            <div class = "shopItem" id = "shopItem1">
-                <img src = "../img/icon.png" alt = "" />
-                <p id = "itemName1">night mode</p>
-                <p id = "itemDescription1">dfsdfsf</p>
-                <p id = "itemPrice1">£32</p>
-                <button type = "button" name = "addItemButton" id = "addItemButton1">Add to basket</button>
-            </div>     
-        <div id = "shopItemsContainer">
+    <article class="grid-item">
+        <button type = "button" name = "checkoutButton" id = "checkoutButton">Checkout</button>
+        <hr>
+        <p id = "totalPrice" style="text-align: center; font-size: 2em; margin-top: 5px;">Order History</p>
+        
     </article>
+
+    <aside class = "grid-item">
+        <h2 style="text-align: center; font-size: 2em; margin-top: 5px;">Recommended items</h3>
+        <hr>
+    </aside>
 
 <?php
     footer();
