@@ -21,11 +21,11 @@ $cursor = $db->products->find($findCriteria);
 
 //Output the results
 echo "<h1>Results</h1>";
-foreach ($cursor as $prod){
+foreach ($cursor as $product){
    echo "<p>";
-   echo "<img src=" . $prod['item_image']. ">";
-   echo $prod['name'];
-   echo $prod['price'];
+   echo "<img src=" . $product['item_image']. ">";
+   echo $product['name'];
+   echo $product['price'];
    echo "</p>";
 }
 
