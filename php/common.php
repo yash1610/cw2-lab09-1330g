@@ -79,7 +79,7 @@
     function footer(){
         print('
                 <footer class="grid-item">
-                    <p>Developed by Yash and Cristina<br> Middlesex University <br> Web Applications and Databases Module</p>
+                    <p>Developed by Yash, Amanda and Cristina<br> Middlesex University <br> Web Applications and Databases Module</p>
                 </footer>        
             </body>
         </html>');
