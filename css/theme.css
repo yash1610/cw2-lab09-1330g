@@ -21,9 +21,6 @@ body {
 }
 
 /*=== header ===*/
-form {
-    
-}
 
 .item-logo img {
     display: block;
@@ -32,9 +29,9 @@ form {
     width: 50%;
 }
 
-#searchInput {
-    display: inline;
+#query {
     width: 70%;
+    margin-top: 1%;
     font-size: 1.2rem;
     margin-right: 2%;
     margin-left: 3%;
@@ -45,14 +42,14 @@ form {
     margin-bottom: 0;
 }
 
-#searchInput:focus {
+#query:focus {
     outline: none;
     box-shadow: 0px 0px 4px rgb(114, 43, 2);
 }
 
 #searchButton {
+    margin-top: 1%;
     width: 20%;
-    display: inline;
     font-size: 1.3rem;
     color: white;
     background-color: rgb(114, 43, 2);    
