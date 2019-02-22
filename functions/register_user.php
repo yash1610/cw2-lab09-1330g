@@ -17,7 +17,7 @@ $findCriteria = [
         "email" => $email, 
 ];
 
-$cursor = $db->customers->find($findCriteria);
+$cursor = $db->user->find($findCriteria);
 
 if($cursor->count() >= 1){
     echo 'Error, cannot register user, email already exists';
