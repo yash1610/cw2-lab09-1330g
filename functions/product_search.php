@@ -6,7 +6,7 @@ $mongoClient = new MongoClient();
 $db = $mongoClient->cw2;
 
 //Select a collection 
-$collection = $db->user;
+$collection = $db->products;
 
 //Extract the data that was sent to the server, bobby tables
 $search_string = filter_input(INPUT_GET, 'query', FILTER_SANITIZE_STRING);
