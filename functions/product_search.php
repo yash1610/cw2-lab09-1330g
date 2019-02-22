@@ -14,10 +14,14 @@ $search_string = filter_input(INPUT_GET, 'query', FILTER_SANITIZE_STRING);
 //Create a PHP array with our search criteria
 $findCriteria = [
     '$text' => [ '$search' => $search_string ] 
- ];
+];
 
 //Find all of the customers that match  this criteria
 $cursor = $db->products->find($findCriteria);
+
+if($cursor->count() == 0) {
+   echo '<p>No products matching'. $search_string.'</p>';
+}
 
 //Output the results
 echo "<h1>Results</h1>";
