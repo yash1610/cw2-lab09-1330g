@@ -115,5 +115,7 @@ CSD2550 Coursework 2
     In the end we just shifted to a parallel design approach, trying to do what we can however we can. We didn't do very
     well.<br>
 
-    <strong>these opinions are my own and I believe the other members of my group should also be heard from</strong>
+    <strong>these opinions are my own and I believe the other members of my group should also be heard from.
+        While it may look like i contributed I believe I was the biggest detriment to effective functioning of the
+        group<</strong>
 </p>
