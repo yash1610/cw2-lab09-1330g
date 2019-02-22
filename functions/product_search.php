@@ -21,6 +21,7 @@ $cursor = $db->products->find($findCriteria);
 
 if($cursor->count() == 0) {
    echo '<p>No products matching'. $search_string.'</p>';
+    return 0;
 }
 
 //Output the results
