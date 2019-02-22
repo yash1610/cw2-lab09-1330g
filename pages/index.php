@@ -1,5 +1,5 @@
 <?php
-    include('../php/common.php');
+    include('../functions/common.php');
     head('Main');
 ?>
     <!-- Header -->
@@ -12,17 +12,12 @@
     ?>
 
     <script src = "../js/pageLoad.js"></script>
+    <script src = "../js/loadResults.js"></script>
 
     <article class="grid-item" style="grid-column: 2 / 4;">
         <div id = "shopItemsContainer">
-            <div class = "shopItem" id = "shopItem1">
-                <img src = "../img/icon.png" alt = "" />
-                <p id = "itemName1">night mode</p>
-                <p id = "itemDescription1">dfsdfsf</p>
-                <p id = "itemPrice1">£32</p>
-                <button type = "button" name = "addItemButton" id = "addItemButton1">Add to basket</button>
-            </div>     
-        <div id = "shopItemsContainer">
+            
+        </div>     
     </article>
 
 <?php

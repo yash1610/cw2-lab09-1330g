@@ -1,5 +1,5 @@
 <?php
-    include('../php/common.php');
+    include('../functions/common.php');
     head('Main');
 ?>
     <!-- Header -->
