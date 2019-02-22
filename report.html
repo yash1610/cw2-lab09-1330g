@@ -73,10 +73,18 @@
 <p>
     <strong>Order History:</strong>
     Order History is stored as a key:value pair inside the user collection in the document of the current logged in
-    user. The value pair in this case are nested documents which have the objects ids of the product
+    user. The value pair in this case are nested documents which have the objects ids of the product denoting that
+    customer purchased these product/s. Shopping basket uses a similar format to this
 </p>
 
-<h3><strong>Ranking Table<br /></strong></h3>
+<p>
+    <strong>Recommendations:</strong>
+    Recommendations are incomplete, but the code is inside. I wanted to do a multiple stage recommendations system
+    wherein the past order, along with the most searched for keyword globally and the user keyword searches are used in
+    a weighted system, with these 3 things being weighted and summed together for a more robust recommendation system.
+</p>
+
+<h3><strong>MongoDB dump<br /></strong></h3>
 
 <p>
     <strong>Storage of user Scores in JSON:</strong>

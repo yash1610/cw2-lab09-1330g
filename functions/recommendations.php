@@ -18,16 +18,8 @@
         '$text' => [ '$search' =>  $email] 
     ];
     
-    $cursor = $db->products->find($findCriteria);
+    $cursor = $db->user->find($findCriteria);
 
     //Output the results
-    echo "<h1>Results</h1>";
-    foreach ($cursor['order_history'] ){
-       echo "<p>";
-       echo "<img src=" . $product['item_image']. ">";
-       echo $product['name'];
-       echo $product['price'];
-       echo "</p>";
-    }
     //Close the connection
     $mongoClient->close();
