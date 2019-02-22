@@ -2,6 +2,7 @@
     "name": "dark mode",
     "description": "dark mode for game",
     "price": 100,
+    "inventory": 100,
     "item_image": "media/dark_mode.png",
     "category": "appearance"
 },
@@ -9,6 +10,7 @@
     "name": "wins",
     "description": "buy 100 wins",
     "price": 200,
+    "inventory": 100,
     "item_image": "media/buy_wins.png",
     "category": "cheat"
 },
@@ -16,6 +18,7 @@
     "name": "save",
     "description": "save stats",
     "price": 150,
+    "inventory": 100,
     "item_image": "media/save.png",
     "category": "quality"
 },
@@ -23,6 +26,7 @@
     "name": "undo",
     "description": "undo 2 turns",
     "price": 175,
+    "inventory": 100,
     "item_image": "media/undo.png",
     "category": "cheat"
 },
@@ -30,6 +34,7 @@
     "name": "cotrol options",
     "description": "use arrows keys instead of command line",
     "price": 125,
+    "inventory": 100,
     "item_image": "media/control.png",
     "category": "quality"
 },
@@ -37,6 +42,7 @@
     "name": "change name",
     "description": "change your name",
     "price": 99,
+    "inventory": 100,
     "item_image": "media/change_name.png",
     "category": "appearance"
 },
@@ -44,6 +50,31 @@
     "name": "animation",
     "description": "add animations",
     "price": 185,
+    "inventory": 100,
     "item_image": "media/anim.png",
     "category": "appearance"
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+{
+    "name": "yash",
+    "email": "yash@test.com",
+    "password": "12345",
+    "basket": "",
+    "order_history": ""
+},
+{
+    "name": "cristina",
+    "email": "cristina@test.com",
+    "password": "67890",
+    "basket": "",
+    "order_history": ""
+},
+{
+    "name": "amanda",
+    "email": "amanda@test.com",
+    "password": "qwerty",
+    "basket": "",
+    "order_history": ""
 }
