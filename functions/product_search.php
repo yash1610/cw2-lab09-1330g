@@ -1,5 +1,4 @@
 <?php
-
 //Connect to database
 $mongoClient = new MongoClient();
 
@@ -10,29 +9,28 @@ $db = $mongoClient->cw2;
 $collection = $db->products;
 
 //Extract the data that was sent to the server, bobby tables
-$search_string = filter_input(INPUT_POST, 'query', FILTER_SANITIZE_STRING);
+$search_string = filter_input(INPUT_GET, 'query', FILTER_SANITIZE_STRING);
 
 //Create a PHP array with our search criteria
 $findCriteria = [
-    '$text' => [ '$search' => "$search_string" ] 
+    '$text' => [ '$search' => $search_string ] 
 ];
-
-echo $search_string;
 
 //Find all of the customers that match  this criteria
 $cursor = $db->products->find($findCriteria);
 if($cursor->count() == 0) {
-   return 0;
+   echo '<p>No products matching'. $search_string.'</p>';
+   return;
 }
 
+//Output the results
+echo "<h1>Results</h1>";
 foreach ($cursor as $product){
-   echo "<div class = 'shopItem'>";
+   echo "<p>";
    echo "<img src=" . $product['item_image']. ">";
-   echo "<p>".$product['name']."</p>";
-   echo "<p>".$product['description']."</p>";
-   echo "<p>".$product['price']."</p>";
-   echo "</div>";
-   echo "<button type = 'button' name = 'addItemButton' id = 'addItemButton1'>Add to basket</button>";
+   echo $product['name'];
+   echo $product['price'];
+   echo "</p>";
 }
 
 //Close the connection

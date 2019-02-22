@@ -6,6 +6,8 @@
     //Connect to MongoDB and select database
     $mongoClient = new MongoClient();
     $db = $mongoClient->cw2;
+    //Select a collection 
+    $collection = $db->user;
 
     //Create a basket document if we do not have one
     if( !array_key_exists("basket_id", $_SESSION) ){
